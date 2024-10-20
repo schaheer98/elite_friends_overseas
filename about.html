@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Elite Friends Overseas{% endblock %}</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Elite Friends Overseas Logo" style="height: 40px; width: auto; margin-right: 10px;">
+            Elite Friends Overseas
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner (Optional Block) -->
+
+    <div class="jumbotron text-center" style="background-color: #f8f9fa; padding: 2rem; border-radius: 0.5rem; margin-bottom: 2rem; position: relative; overflow: hidden;">
+        <img src="{% static 'images/background.jpg' %}" alt="Background" class="background-image" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(8px); z-index: -1;">
+        <h1 style="font-size: 2.5rem; font-weight: bold; color: #343a40;">About Us</h1>
+        <p style="font-size: 1.25rem; color: #6c757d;">Learn more about our journey, values, and the team behind Elite Friends Overseas.</p>
+    </div>
+
+
+    <!-- Main Content -->
+    <main class="container mt-5">
+        
+        <div class="container mt-5">
+            <h2 class="text-center">Who We Are</h2>
+            <p class="lead" style="font-size: 1.25rem;">
+                Elite Friends Overseas brings over a decade of experience in the field of supply chain, logistics services, and export/import, providing reliable services for companies both nationally and internationally.
+            </p>
+            <p class="lead" style="font-size: 1.25rem;">
+                At Elite Friends Overseas, we pride ourselves on our committed team of experts who focus on creating value and ensuring professionalism in every aspect of our operations. We are not merely a service provider but a growth partner for our clients. With our committed team, we strive to be your reliable source for the services and products you're looking for!
+            </p>
+            <p class="lead" style="font-size: 1.25rem;">
+                Currently, we operate within India, serving customers worldwide, including Nigeria, Iran, Afghanistan, the USA, and Australia, in the logistics and import/export field.
+            </p>
+            
+            <h3 class="mt-4">Why Us?</h3>
+            <p class="lead" style="font-size: 1.25rem;">
+                We leverage more than 10 years of experience in supplying a premium range of quality products, which positions us to confidently claim that we can deliver the best.
+            </p>
+            <p class="lead" style="font-size: 1.25rem;">
+                Our high-quality products lead to client satisfaction, enabling us to meet and fulfill even the most complex demands with confidence and in the required quantities.
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 Elite Friends Overseas</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

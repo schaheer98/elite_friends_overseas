@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Contact Us - Elite Friends Overseas{% endblock %}</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Elite Friends Overseas Logo" style="height: 40px; width: auto; margin-right: 10px;">
+            Elite Friends Overseas
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="jumbotron text-center" style="background-color: #f8f9fa; padding: 2rem; border-radius: 0.5rem; margin-bottom: 2rem; position: relative; overflow: hidden;">
+        <img src="{% static 'images/background.jpg' %}" alt="Background" class="background-image" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(8px); z-index: -1;">
+        <h1 style="font-size: 2.5rem; font-weight: bold; color: #343a40;">Contact Us</h1>
+        <p style="font-size: 1.25rem; color: #6c757d;">Feel free to reach us via email or phone for any inquiries.</p>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mt-5">
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-md-12 text-center">
+                <h2>Contact Details</h2>
+                <p class="lead" style="font-size: 1.25rem;">You can reach us directly via email or phone. We’re happy to assist you with any questions, business inquiries, or service-related requests.</p>
+                
+                <div class="mt-4">
+                    <h4>Email</h4>
+                    <p><a href="mailto:info@elitefriendsoverseas.com" style="font-size: 1.25rem; color: #007bff;">info@elitefriendsoverseas.com</a></p>
+                    
+                    <h4>Phone Numbers</h4>
+                    <p style="font-size: 1.25rem;">+91-1234567890 (India)</p>
+                    <p style="font-size: 1.25rem;">+93-123456789 (Afghanistan)</p>
+                    <p style="font-size: 1.25rem;">+98-123456789 (Iran)</p>
+                    
+                    <h4>Address</h4>
+                    <p style="font-size: 1.25rem;">123 Business Avenue, City, Country</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 Elite Friends Overseas</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

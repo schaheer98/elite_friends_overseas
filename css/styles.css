@@ -1,0 +1,36 @@
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Fixed height for the carousel */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.carousel-item img {
+    width: 100%; /* Make the image take the full width of the carousel */
+    height: 100%; /* Make the image take the full height of the carousel */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+}
+
+.product-scroll {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.product-scroll .card {
+    margin-right: 15px; /* Space between cards */
+    min-width: 200px; /* Minimum width for each card */
+}
+
+
+.company-name {
+    font-family: 'Georgia', serif; /* Choose a more elegant font */
+    letter-spacing: 2px; /* Add spacing between letters */
+    text-transform: uppercase; /* Make the text uppercase */
+}
+
+.company-name span {
+    padding: 0 5px; /* Add a bit of spacing between words */
+}
+
